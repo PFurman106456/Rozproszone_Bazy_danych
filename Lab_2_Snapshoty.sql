@@ -1,0 +1,8 @@
+-- Zadanie 1 -- 
+
+CREATE MATERIALIZED VIEW REP_wykladowcy
+BUILD IMMEDIATE
+REFRESH COMPLETE
+ON DEMAND
+AS
+SELECT * FROM wykladowcy@dblinkfilia;
